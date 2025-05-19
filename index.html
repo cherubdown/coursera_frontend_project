@@ -12,7 +12,55 @@
         <h1>Chris' Portfolio (Coursera Project)</h1>
     </header>
     <main>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="flex-container">
+                <div role="none" class="grid-item"><a href="#home" role="menuitem" tabindex="0">Home</a></div>
+                <div role="none" class="grid-item"><a href="#about" role="menuitem" tabindex="0">About</a></div>
+                <div role="none" class="grid-item"><a href="#services" role="menuitem" tabindex="0">Services</a></div>
+            </div>
+        </nav>
+        <div class="grid-container-2 grid-container">
+            
+            <div class="grid-item">
+                
+                <h2>Hello, I am Chris</h2>
+                <p>My hobbies include:</p>
+                <ul>
+                    <li>Programming</li>
+                    <li>Music</li>
+                    <li>Gaming</li>
+                    <li>Turtles</li>
+                </ul>
+
+                <h2>Personal Goals</h2>
+                <ol>
+                    <li>Finish this course</li> 
+                    <li>Finish the Microsoft Front-End Developer course</li>
+                </ol>
+            </div>
+            <div class="grid-item">
+                <img src="me.jpg" alt="Picture of me" class="profile-img">
+            </div>
+        </div>
         
+        <h2>Here's an example of a form:</h2>
+        <form action="/">
+            <label for="Name">Name:</label><br>
+            <input type="text" id="Name" name="Name" value=""><br>
+            <label for="Email">Email:</label><br>
+            <input type="text" id="Email" name="Email" value=""><br>
+
+            <p>Rating:</p>
+            <input type="radio" id="ExcellentRating" name="rating" value="Excellent">
+            <label for="ExcellentRating">Excellent</label><br>
+            <input type="radio" id="GoodRating" name="rating" value="Good">
+            <label for="GoodRating">Good</label><br>
+            <input type="radio" id="AverageRating" name="rating" value="Average">
+            <label for="AverageRating">Average</label>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
     </main>
     <footer>
         <p>&copy; 2025 Chris' Portfolio (Coursera Project)</p>

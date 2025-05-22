@@ -43,3 +43,34 @@ async function fetchData() {
         xhr.send();
     });
 }
+
+function validateForm() {
+    const form = document.getElementById("submit-form");
+    let email = document.getElementById("Email").value;
+    let name = document.getElementById("Name").value;
+    let validationMessageDiv = document.getElementById("validation-message");
+    let errors = false;
+
+    validationMessageDiv.innerHTML = ""; // Clear previous messages
+
+    if(name == null || name == "") { 
+        validationMessageDiv.innerHTML += "Name is required";
+        validationMessageDiv.style.color = "red";
+        errors = true;
+    }
+
+    if(email == null || email == "") { 
+        validationMessageDiv.innerHTML += "<br>Email is required";
+        validationMessageDiv.style.color = "red";
+        errors = true;
+    }
+
+    if(errors) {
+        return;
+    }
+
+    form.reset();
+    validationMessageDiv.innerHTML = "Form submitted successfully!";
+    validationMessageDiv.style.color = "green";
+    return true;
+}

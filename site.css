@@ -3,6 +3,14 @@
     font-family: 'arial', sans-serif;
 }
 
+.main-header {
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
 .note {
     font-weight: bold;
     font-style: italic;
@@ -51,6 +59,7 @@
 
 .profile-img {
     width: 100%;
+    max-width:350px;
     height: 100%;
     object-fit: fill;
 }
@@ -66,10 +75,109 @@
 
 /* Mobile */
 @media (max-width: 480px) {
+    .main-header {
+        font-size: 1.5rem;
+    }
     .flex-container {
         flex-direction: column;
     }
     .flex-item {
         width: 94%;
+    }
+}
+
+/* Form Stuff */
+
+.form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.radio-group {
+  margin-bottom: 0.5rem;
+}
+
+.radio-group input {
+  margin-right: 0.5rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+/* Loading bar */
+.loader-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.loader-bar {
+    height: 100%;
+    background: green;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: loadingSteps 5s steps(5, end) forwards;
+}
+
+@keyframes loadingSteps {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
     }
 }

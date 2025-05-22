@@ -9,58 +9,83 @@
 </head>
 <body>
     <header>
-        <h1>Chris' Portfolio (Coursera Project)</h1>
+        <h1>Chris' Portfolio</h1>
     </header>
     <main>
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="flex-container">
-                <div role="none" class="grid-item"><a href="#home" role="menuitem" tabindex="0">Home</a></div>
-                <div role="none" class="grid-item"><a href="#about" role="menuitem" tabindex="0">About</a></div>
-                <div role="none" class="grid-item"><a href="#services" role="menuitem" tabindex="0">Services</a></div>
+                <div role="none" class="flex-item"><a href="#home" role="menuitem" tabindex="0">Home</a></div>
+                <div role="none" class="flex-item"><a href="#about" role="menuitem" tabindex="0">About</a></div>
+                <div role="none" class="flex-item"><a href="#services" role="menuitem" tabindex="0">Services</a></div>
             </div>
         </nav>
-        <div class="grid-container-2 grid-container">
-            
+        <div class="note">
+            <p>Example of a 2fr Grid:</p>
+        </div>
+        <div class="grid-container">
             <div class="grid-item">
-                
-                <h2>Hello, I am Chris</h2>
-                <p>My hobbies include:</p>
-                <ul>
-                    <li>Programming</li>
-                    <li>Music</li>
-                    <li>Gaming</li>
-                    <li>Turtles</li>
-                </ul>
+                <p>(grid-item 1)</p>
+                <article>
+                    <h2>Hello, I am Chris</h2>
+                    <p>My hobbies include:</p>
+                    <ul>
+                        <li>Programming</li>
+                        <li>Music</li>
+                        <li>Gaming</li>
+                        <li>Chickens</li>
+                    </ul>
 
-                <h2>Personal Goals</h2>
-                <ol>
-                    <li>Finish this course</li> 
-                    <li>Finish the Microsoft Front-End Developer course</li>
-                </ol>
+                    <h2>Personal Goals</h2>
+                    <ol>
+                        <li>Finish this course</li> 
+                        <li>Finish the Microsoft Front-End Developer course</li>
+                    </ol>
+                </article>
+            </div>
+            <div class="grid-item img-container">
+                <img src="user.png" alt="Picture of me" class="profile-img">
             </div>
             <div class="grid-item">
-                <img src="me.jpg" alt="Picture of me" class="profile-img">
+                <p>(grid-item 3)</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="grid-item">
+                <p>(grid-item 4)</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
+
+        <div class="note">
+            <p>Javascript examples:</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <p>Fetch a random fact from an API using javascript:</p>
+                <button id="fetch-button">Fetch Random Fact</button>
+                <p id="fetch-container"></p>
+            </div>
+
+            <div class="grid-item">
+                <form action="/">
+                    <label for="Name">Name:</label><br>
+                    <input type="text" id="Name" name="Name" value=""><br>
+                    <label for="Email">Email:</label><br>
+                    <input type="text" id="Email" name="Email" value=""><br>
+
+                    <p>Rating:</p>
+                    <input type="radio" id="ExcellentRating" name="rating" value="Excellent">
+                    <label for="ExcellentRating">Excellent</label><br>
+                    <input type="radio" id="GoodRating" name="rating" value="Good">
+                    <label for="GoodRating">Good</label><br>
+                    <input type="radio" id="AverageRating" name="rating" value="Average">
+                    <label for="AverageRating">Average</label>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>  
         
-        <h2>Here's an example of a form:</h2>
-        <form action="/">
-            <label for="Name">Name:</label><br>
-            <input type="text" id="Name" name="Name" value=""><br>
-            <label for="Email">Email:</label><br>
-            <input type="text" id="Email" name="Email" value=""><br>
-
-            <p>Rating:</p>
-            <input type="radio" id="ExcellentRating" name="rating" value="Excellent">
-            <label for="ExcellentRating">Excellent</label><br>
-            <input type="radio" id="GoodRating" name="rating" value="Good">
-            <label for="GoodRating">Good</label><br>
-            <input type="radio" id="AverageRating" name="rating" value="Average">
-            <label for="AverageRating">Average</label>
-            <br>
-            <input type="submit" value="Submit">
-        </form>
-
     </main>
     <footer>
         <p>&copy; 2025 Chris' Portfolio (Coursera Project)</p>
